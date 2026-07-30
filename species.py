@@ -66,5 +66,3 @@ class Species:
     @language.setter
     def language(self, value):
         self._language = value
-
-
