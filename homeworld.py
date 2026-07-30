@@ -38,9 +38,9 @@ class Homeworld:
     def population(self):
         return self._population
 
-    @name.setter
-    def name(self, name):
-        self._name = name
+    @world_name.setter
+    def world_name(self, world_name):
+        self._world_name = world_name
     @rotation_period.setter
     def rotation_period(self, rotation_period):
         self._rotation_period = rotation_period
@@ -65,4 +65,3 @@ class Homeworld:
     @population.setter
     def population(self, population):
         self._population = population
-
