@@ -1,6 +1,6 @@
 class Homeworld:
-    def __init__(self, name, rotation_period, orbital_period, diameter, climate, gravity, terrain, surface_water, population):
-        self._name = name
+    def __init__(self, world_name, rotation_period, orbital_period, diameter, climate, gravity, terrain, surface_water, population):
+        self._world_name = world_name
         self._rotation_period = rotation_period
         self._orbital_period = orbital_period
         self._diameter = diameter
@@ -11,8 +11,8 @@ class Homeworld:
         self._population = population
 
     @property
-    def name(self):
-        return self._name
+    def world_name(self):
+        return self._world_name
     @property
     def rotation_period(self):
         return self._rotation_period

@@ -1,6 +1,9 @@
-class Character:
+import homeworld
+import film
 
-  def __init__(self, name, height, mass, hair_color, skin_color, eye_color, birth_year, gender):
+class Character(homeworld.Homeworld, film.Film):
+
+  def __init__(self, name, height, mass, hair_color, skin_color, eye_color, birth_year, gender, world_name, rotation_period, orbital_period, diameter, climate, gravity, terrain, surface_water, population, title, episode_id, opening_crawl, director, producer, release_date):
       self._name = name
       self._height = height
       self._mass = mass
@@ -9,6 +12,10 @@ class Character:
       self._eye_color = eye_color
       self._birth_year = birth_year
       self._gender = gender
+
+      super().__init__(world_name, rotation_period, orbital_period, diameter, climate, gravity, terrain, surface_water, population)
+      super().__init__(title, episode_id, opening_crawl, director, producer, release_date)
+
 
       @property
       def name(self):
