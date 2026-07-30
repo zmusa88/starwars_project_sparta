@@ -14,12 +14,9 @@ class Character(homeworld.Homeworld, film.Film, species.Species):
       self._birth_year = birth_year
       self._gender = gender
 
-      super().__init__(
-          world_name, rotation_period, orbital_period, diameter, climate, gravity, terrain, surface_water, population)
-      super().__init__(
-          title, episode_id, opening_crawl, director, producer, release_date)
-      super().__init__(
-          species_name, classification, designation, average_height, species_skin_color,species_hair_color, species_eye_color, average_lifespan, language)
+      super().__init__(world_name, rotation_period, orbital_period, diameter, climate, gravity, terrain, surface_water, population)
+      super().__init__(title, episode_id, opening_crawl, director, producer, release_date)
+      super().__init__(species_name, classification, designation, average_height, species_skin_color,species_hair_color, species_eye_color, average_lifespan, language)
 
 
   @property
